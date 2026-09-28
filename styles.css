@@ -299,7 +299,8 @@ a:focus-visible {
   .portfolio-section {
     padding: 88px 0;
   }
-    .about-grid {
+
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 52px;
   }
@@ -322,6 +323,66 @@ a:focus-visible {
     grid-template-columns: repeat(3, minmax(220px, 1fr));
     overflow-x: auto;
     padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-container,
+  .hero,
+  .portfolio-section,
+  .site-footer {
+    width: min(100% - 28px, var(--max-width));
+  }
+
+  .hero {
+    padding-top: 56px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.1rem, 17vw, 4.7rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-system {
+    padding: 22px;
+  }
+
+  .portfolio-section {
+    padding: 72px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .about-sidebar {
+    display: flex;
+  }
+
+  .about-photo-placeholder {
+    min-height: 320px;
+  }
+
+  .leadership-block {
+    margin-top: 72px;
+    padding-top: 56px;
+  }
+
+  .leadership-cards {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .leadership-card {
+    min-height: auto;
   }
 }
 /* About */
