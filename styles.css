@@ -1,12 +1,12 @@
 :root {
-  --bg: #f5f7fa;
+  --bg: #e9e6e0;
   --surface: #ffffff;
-  --surface-soft: #eef2f6;
-  --text: #172033;
-  --text-muted: #667085;
-  --border: #d8dee8;
-  --accent: #1f4f8f;
-  --accent-dark: #163a69;
+  --surface-soft: #f5f3ef;
+  --text: #000000;
+  --text-muted: #3f464c;
+  --border: rgba(52, 75, 94, 0.20);
+  --accent: #344b5e;
+  --accent-dark: #243746;
   --max-width: 1180px;
   --radius: 18px;
 }
@@ -43,7 +43,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(245, 247, 250, 0.94);
+  background: rgba(233, 230, 224, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -59,6 +59,9 @@ img {
 }
 
 .nav-brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 0.98rem;
   font-weight: 700;
   text-decoration: none;
@@ -67,11 +70,17 @@ img {
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  justify-content: flex-end;
+  gap: 0 16px;
 }
 
 .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  white-space: nowrap;
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.92rem;
@@ -192,7 +201,7 @@ img {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  box-shadow: 0 20px 60px rgba(23, 32, 51, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
 
 .system-item {
@@ -210,6 +219,13 @@ img {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+/* Anchors for the current portfolio sections */
+
+.anchor-marker {
+  display: block;
+  height: 0;
 }
 
 /* Portfolio sections */
@@ -258,7 +274,7 @@ img {
 /* Focus states */
 
 a:focus-visible {
-  outline: 3px solid rgba(31, 79, 143, 0.25);
+  outline: 3px solid rgba(52, 75, 94, 0.5);
   outline-offset: 4px;
   border-radius: 6px;
 }
@@ -487,23 +503,22 @@ a:focus-visible {
 /* Responsive */
 
 @media (max-width: 900px) {
+  html {
+    scroll-padding-top: 180px;
+  }
+
   .nav-container {
     min-height: auto;
-    padding: 18px 0;
+    padding: 12px 0;
     align-items: flex-start;
     flex-direction: column;
-    gap: 14px;
+    gap: 6px;
   }
 
   .nav-links {
     width: 100%;
-    gap: 16px;
-    overflow-x: auto;
-    padding-bottom: 4px;
-  }
-
-  .nav-links a {
-    white-space: nowrap;
+    justify-content: flex-start;
+    gap: 0 12px;
   }
 
   .hero {
@@ -560,7 +575,7 @@ a:focus-visible {
   }
 
   .hero h1 {
-    font-size: clamp(3.1rem, 17vw, 4.7rem);
+    font-size: clamp(2.8rem, 14vw, 4.7rem);
   }
 
   .hero-actions {
