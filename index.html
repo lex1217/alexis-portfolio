@@ -113,6 +113,8 @@
         I bring a marketer’s perspective to technical work. I start with the
         business problem, understand the people and processes involved, and then
         use data, systems, automation, and AI to build a practical solution.
+        Much of this work began with noticing a cost, reliability, or process
+        problem and teaching myself the tools needed to solve it.
       </p>
 
       <div id="experience" class="career-path">
@@ -156,10 +158,16 @@
 
     <div class="about-sidebar">
 
-      <div class="about-photo-placeholder">
-        <span>Portrait</span>
-        <small>Add your preferred photo asset here</small>
-      </div>
+      <figure class="about-photo">
+        <img
+          src="assets/profile/alexis-rios-headshot.webp"
+          alt="Alexis Rios"
+          width="960"
+          height="1200"
+          loading="lazy"
+          decoding="async"
+        >
+      </figure>
 
       <div class="about-card">
         <p class="card-label">Current Focus</p>
@@ -178,6 +186,16 @@
           Website Development Certification
         </p>
         <span class="card-highlight">Summa Cum Laude</span>
+      </div>
+
+      <div class="about-card">
+        <p class="card-label">Selected Recognition</p>
+        <ul class="recognition-list">
+          <li>Daktronics NAIA Women’s Soccer Scholar-Athlete · 2022 & 2023</li>
+          <li>Dean’s List · 2021–2022 & 2025</li>
+          <li>President’s List · 2022</li>
+          <li>Omaha Storm Chasers marketing presentation · Top 7 of 35 students</li>
+        </ul>
       </div>
 
     </div>
@@ -248,52 +266,67 @@
       <div class="work-grid">
         <article class="work-card">
           <p class="work-tag">Data Infrastructure</p>
-          <h3>Centralized Marketing Reporting Layer</h3>
+          <h3>Reporting Infrastructure Modernization</h3>
           <p>
-            Developed centralized reporting infrastructure in BigQuery,
-            reducing reliance on third-party connectors and creating a reusable
-            data layer for dashboards, internal tools, and AI-assisted reporting.
+            Helped move agency reporting from an increasingly expensive,
+            connector-dependent setup toward centralized BigQuery datasets
+            supported by APIs, scheduled ingestion, and standardized client mapping.
           </p>
           <ul>
-            <li>BigQuery and SQL</li>
-            <li>Marketing APIs and data mapping</li>
-            <li>Reusable reporting data</li>
+            <li>Reusable data layer for multiple reporting interfaces</li>
+            <li>Daily API-driven data ingestion</li>
+            <li>Standardized client, platform, and tactic mappings</li>
           </ul>
         </article>
 
         <article class="work-card">
-          <p class="work-tag">Automation & Integration</p>
-          <h3>Automated Marketing Data Workflows</h3>
+          <p class="work-tag">Data Reliability</p>
+          <h3>Data Health Monitoring</h3>
           <p>
-            Build and maintain workflows that move advertising and marketing
-            data through APIs, webhooks, and standardized client and platform
-            mappings so reporting data stays consistent and accessible.
+            Built a proactive monitoring workflow across BigQuery, Supabase,
+            and n8n workflow status to surface missing data, unmapped records,
+            suspicious values, and ingestion errors before they reached reporting.
           </p>
           <ul>
-            <li>n8n and Make</li>
-            <li>APIs, webhooks, and JSON</li>
-            <li>Cross-platform data workflows</li>
+            <li>Cross-system health checks</li>
+            <li>Mapping and missing-data detection</li>
+            <li>Workflow error monitoring</li>
           </ul>
         </article>
 
         <article class="work-card">
-          <p class="work-tag">Applied AI</p>
-          <h3>AI-Assisted Internal Workflows</h3>
+          <p class="work-tag">Sales Automation</p>
+          <h3>AI-Assisted Prospect Research</h3>
           <p>
-            Built structured workflows that support prospect research, sales
-            discovery, reporting, and data-health monitoring, then route useful
-            outputs to the appropriate team members.
+            Built and internally tested an end-to-end workflow that turns a
+            structured sales intake into AI-assisted research, a generated
+            document, and delivery to the appropriate representative.
           </p>
           <ul>
-            <li>Research and sales preparation</li>
-            <li>Structured outputs and routing</li>
-            <li>Human review within the workflow</li>
+            <li>Form intake and structured JSON</li>
+            <li>Agent instructions and document generation</li>
+            <li>Automated routing and folder organization</li>
+          </ul>
+        </article>
+
+        <article class="work-card">
+          <p class="work-tag">Applied AI Prototype</p>
+          <h3>Conversational Marketing Reporting</h3>
+          <p>
+            Prototyped a BigQuery-backed reporting agent that interprets
+            natural-language requests, resolves the correct client and platforms,
+            and retrieves the relevant reporting data within defined guardrails.
+          </p>
+          <ul>
+            <li>Client and platform resolution</li>
+            <li>Dynamic SQL and date-range handling</li>
+            <li>Instructions, restrictions, and guardrails</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <span id="capabilities" class="anchor-marker" aria-hidden="true"></span>
+        <span id="capabilities" class="anchor-marker" aria-hidden="true"></span>
     <section id="data" class="portfolio-section">
       <p class="section-label">03</p>
       <h2>Capabilities</h2>
@@ -305,34 +338,35 @@
       <div class="capability-grid">
         <article class="capability-card">
           <h3>Data & Reporting</h3>
-          <p>BigQuery, SQL, Looker Studio, data pipelines, mapping, and reusable reporting infrastructure.</p>
+          <p>BigQuery, SQL, Looker Studio, Supabase, data pipelines, schemas, field types, mapping, scheduled ingestion, and reusable reporting infrastructure.</p>
         </article>
 
         <article class="capability-card">
           <h3>Automation & Integration</h3>
-          <p>n8n, Make, APIs, webhooks, JSON, workflow design, and process automation.</p>
+          <p>n8n, Make, APIs, OAuth and service-account authentication, HTTP requests, webhooks, JSON, conditional routing, and process automation.</p>
         </article>
 
         <article class="capability-card">
           <h3>Measurement & MarTech</h3>
-          <p>GA4, Google Tag Manager, conversion tracking, pixels, custom conversions, Meta Ads Manager, and Google Ads.</p>
+          <p>GA4, Google Tag Manager, Meta and Illumin pixels, event-based tracking, custom conversions, conversion hierarchy, Meta Ads Manager, and Google Ads.</p>
         </article>
 
         <article class="capability-card">
           <h3>Marketing & Visibility</h3>
-          <p>Campaign strategy, paid media support, retargeting, Local SEO, Google Business Profile, on-page SEO, AEO/GEO, HTML, and CSS.</p>
+          <p>Campaign strategy, audience development, retargeting, Local SEO, Google Business Profile, citations, on-page SEO, AEO/GEO, HTML, and CSS.</p>
         </article>
       </div>
     </section>
 
-    <section id="automation" class="portfolio-section">
+        <section id="automation" class="portfolio-section">
       <p class="section-label">04</p>
       <h2>Systems, Automation & AI</h2>
       <p>
         I focus on the layer beneath dashboards and AI tools: preparing,
-        structuring, connecting, and managing data so people and systems can use
-        it reliably. I design automation around the business process first,
-        keeping human review in the decisions that need it.
+        structuring, connecting, and monitoring data so people and systems can
+        use it reliably. My workflow design starts with the business process,
+        then breaks it into triggers, logic, actions, routing, outputs, and the
+        human review points needed for responsible implementation.
       </p>
     </section>
 
@@ -340,9 +374,11 @@
       <p class="section-label">05</p>
       <h2>Search & Digital Visibility</h2>
       <p>
-        My search work includes Local SEO, Google Business Profile optimization,
-        foundational on-page SEO, website improvements, and emerging AEO/GEO
-        practices for the changing ways people discover information.
+        I have managed recurring Local SEO work across client accounts,
+        including citation management, Google Business Profile cleanup and
+        optimization, photos, reviews, monthly updates, and category corrections.
+        I also review page titles, metadata, heading structure, and image alt text
+        so new websites launch with a sound SEO foundation.
       </p>
     </section>
 
