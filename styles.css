@@ -552,6 +552,24 @@ a:focus-visible {
   background: var(--surface);
 }
 
+.leadership-media {
+  aspect-ratio: 4 / 3;
+  margin: 0 0 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+
+.leadership-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leadership-media-fca img {
+  object-position: center 70%;
+}
+
 .leadership-year {
   color: var(--accent);
   font-size: 0.76rem;
