@@ -99,9 +99,8 @@ img {
   margin: 0 auto;
   min-height: calc(100vh - 72px);
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
-  gap: 72px;
   padding: 84px 0;
 }
 
@@ -191,34 +190,6 @@ img {
 .button-secondary:hover {
   border-color: var(--accent);
   color: var(--accent);
-}
-
-/* Hero system graphic */
-
-.hero-system {
-  position: relative;
-  padding: 34px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-}
-
-.system-item {
-  padding: 13px 16px;
-  background: var(--surface-soft);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  text-align: center;
-  font-weight: 650;
-}
-
-.system-arrow {
-  padding: 7px 0;
-  color: var(--accent);
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 /* Anchors for the current portfolio sections */
@@ -622,10 +593,6 @@ a:focus-visible {
     padding: 72px 0 90px;
   }
 
-  .hero-system {
-    max-width: 520px;
-  }
-
   .portfolio-section {
     padding: 88px 0;
   }
@@ -682,10 +649,6 @@ a:focus-visible {
 
   .button {
     width: 100%;
-  }
-
-  .hero-system {
-    padding: 22px;
   }
 
   .portfolio-section {
