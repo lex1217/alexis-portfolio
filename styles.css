@@ -781,35 +781,7 @@ a:focus-visible {
   }
 
   .thinking-map {
-    aspect-ratio: auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .thinking-connectors {
     display: none;
-  }
-
-  .thinking-person {
-    position: relative;
-    top: auto;
-    left: auto;
-    grid-column: 1 / -1;
-    width: min(70%, 210px);
-    margin: 0 auto 8px;
-    transform: none;
-  }
-
-  .skill-bubble {
-    position: static;
-    width: auto;
-    min-height: 74px;
-    border-radius: 18px;
-  }
-
-  .skill-bubble:hover {
-    transform: none;
   }
 
   .portfolio-section {
