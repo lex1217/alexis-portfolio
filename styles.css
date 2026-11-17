@@ -838,3 +838,12 @@ a:focus-visible {
     min-height: auto;
   }
 }
+
+/* Marketing case study entry point */
+.case-preview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:48px}
+.case-preview-card{display:flex;flex-direction:column;min-width:0;padding:30px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface)}
+.case-preview-card h3{margin:18px 0 10px;font-size:1.55rem;line-height:1.2}
+.case-preview-card p{margin:0 0 26px;color:var(--text-muted);line-height:1.7}
+.case-preview-card .button,.case-preview-status{align-self:flex-start;margin-top:auto}
+.case-preview-status{padding:9px 15px;border:1px solid var(--border);border-radius:50px;color:var(--accent);font-size:.82rem;font-weight:700}
+@media(max-width:700px){.case-preview-grid{grid-template-columns:1fr;margin-top:36px}.case-preview-card{padding:24px}}
