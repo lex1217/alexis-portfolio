@@ -1067,3 +1067,46 @@ a:focus-visible {outline:3px solid #9C4339;outline-offset:4px}
 }
 @media(max-width:360px){.sticky-note strong{font-size:10.5vw}.about-heading h2{font-size:14vw}}
 @media(prefers-reduced-motion:reduce){.sticky-note{transition:none}}
+
+/* FLOATING STICKY NOTE */
+
+.hero-art {
+  background: transparent;
+  padding: 0;
+  overflow: visible;
+  min-height: 420px;
+}
+
+/* Remove the teal section's decorative oval */
+.hero-art::after {
+  display: none;
+}
+
+/* Center the sticky note */
+.note-stage {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  padding: 35px;
+}
+
+/* Keep the original angled effect */
+.sticky-note {
+  width: min(100%, 420px);
+  transform: rotate(-6deg);
+}
+
+@media (max-width: 680px) {
+  .hero-art {
+    min-height: 350px;
+  }
+
+  .note-stage {
+    min-height: 350px;
+    padding: 25px;
+  }
+
+  .sticky-note {
+    width: min(100%, 320px);
+  }
+}
