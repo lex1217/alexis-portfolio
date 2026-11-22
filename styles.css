@@ -988,3 +988,30 @@ a:focus-visible {outline:3px solid #9C4339;outline-offset:4px}
   .site-footer{align-items:flex-start;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Review pass: small screens, keyboard navigation and readable editorial type */
+.skip-link{position:absolute;z-index:2000;top:-70px;left:16px;background:var(--text);color:var(--bg);padding:10px 16px;text-decoration:none;font-weight:700}
+.skip-link:focus{top:12px}
+:focus-visible{outline:3px solid #9C4339;outline-offset:4px}
+.hero-content,.hero-art,.work-card,.capability-card,.about-content{min-width:0}
+.hero-display{overflow-wrap:normal}
+.hero-art-center span{white-space:nowrap}
+.portfolio-section h2{overflow-wrap:break-word}
+@media(max-width:1100px) and (min-width:681px){
+  .hero-display{font-size:clamp(5.2rem,12.2vw,8.5rem)}
+}
+@media(max-width:680px){
+  .hero-display{font-size:clamp(3.75rem,14vw,6.2rem);letter-spacing:-.018em}
+  .hero-art-center{font-size:clamp(3.8rem,13.5vw,6.1rem)}
+  .hero-art{min-height:320px}
+  .hero-art-sticker{right:5%;bottom:12%}
+  .nav-links{column-gap:16px;row-gap:0}
+  .nav-links a{font-size:.65rem}
+  .work-card{padding:24px}
+  .work-card ul{padding-left:18px}
+}
+@media(max-width:360px){
+  .hero-display{font-size:13.1vw}
+  .hero-art-center{font-size:12.8vw}
+  .portfolio-section h2{font-size:12vw}
+}
