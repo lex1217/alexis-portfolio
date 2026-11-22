@@ -11,16 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=creative-refined-1">
+  <link rel="stylesheet" href="styles.css?v=creative-refined-2">
 </head>
 
 <body>
+  <a class="skip-link" href="#featured-work">Skip to selected work</a>
 
   <header class="site-header">
-    <nav class="nav-container">
+    <nav class="nav-container" aria-label="Primary navigation">
       <a href="#top" class="nav-brand" aria-label="Alexis Rios, back to top">AR<span class="brand-dot">.</span></a>
 
-      <div class="nav-links">
+      <div class="nav-links" id="primary-links">
         <a href="#featured-work">Work</a>
         <a href="#about">About</a>
         <a href="#capabilities">Expertise</a>
@@ -52,9 +53,9 @@
     </section>
 
     <span id="featured-work" class="anchor-marker" aria-hidden="true"></span>
-    <section id="strategy" class="portfolio-section">
+    <section id="strategy" class="portfolio-section" aria-labelledby="selected-work-heading">
       <p class="section-label">01 / Selected Projects</p>
-      <h2>Selected <span class="accent-word">Work.</span></h2>
+      <h2 id="selected-work-heading">Selected <span class="accent-word">Work.</span></h2>
       <p>
         Selected systems and workflows that show how I connect marketing
         context, reliable data, and practical implementation.
