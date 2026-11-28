@@ -1110,3 +1110,23 @@ a:focus-visible {outline:3px solid #9C4339;outline-offset:4px}
     width: min(100%, 320px);
   }
 }
+
+/* Give the About story room while keeping the photo alongside it. */
+@media (min-width: 901px) {
+  .about-grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(300px, .6fr);
+    gap: clamp(32px, 4vw, 56px);
+  }
+  .about-content { max-width: none; }
+  .about-content > p:not(.about-intro):not(.about-column-label) { max-width: 820px; }
+}
+
+/* Keep the capability explanations in one type family. */
+.capability-card h3 {
+  font-family: var(--font-body);
+  font-size: clamp(1.5rem, 2.2vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -.035em;
+  text-transform: none;
+}
